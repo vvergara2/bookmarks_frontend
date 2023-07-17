@@ -47,6 +47,7 @@ function LoginForm() {
                 {isLoaded && 
                     <Navigate to="/bookmarks" />
                 }
+                <Alert>DEMO: Log in using demo credentials. Username: fnord, password: pw</Alert>
                 <Alert variant="light">Don't have an account? <Link to={"/register_user"}>Register here</Link></Alert>
                 <Alert variant="light">Forgot your password? <Link to={"/reset_password_request"}>Reset your password</Link></Alert>
                 {searchParams.get("sessionExpired") &&

@@ -45,6 +45,7 @@ function RegisterUserForm() {
             {isSubmitted &&
                 <Navigate to={"/verify_user?" + searchParams.toString()} />
             }
+            <Alert>DEMO: The account verification code will be auto-filled. No email will be sent.</Alert>
             <Alert variant="light">Already have an account? <Link to={"/login"}>Log in here</Link></Alert>
             {error && 
                 <Alert variant="danger">Error: {error.message}</Alert>
